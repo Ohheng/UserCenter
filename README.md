@@ -438,7 +438,11 @@ SpringBoot 项目，通过 application.yml 添加不同的后缀来区分配置�
 可以在启动项目时传入环境变量：
 
 ```bash
+<<<<<<< HEAD
 java -jar .\user-center-0.0.1-SNAPSHOT.jar --spring.profiles.active=prod
+=======
+java -jar .\user-center-backend-0.0.1-SNAPSHOT.jar --spring.profiles.active=prod
+>>>>>>> 3bb67c876b2d6bd3bad2e9f233491205f4f1b2a3
 ```
 
 主要是改：
