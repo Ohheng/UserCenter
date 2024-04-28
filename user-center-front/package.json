@@ -6,6 +6,7 @@
   "scripts": {
     "analyze": "cross-env ANALYZE=1 umi build",
     "build": "umi build",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && umi build",
     "deploy": "npm run build && npm run gh-pages",
     "dev": "npm run start:dev",
     "gh-pages": "gh-pages -d dist",
@@ -24,6 +25,7 @@
     "prettier": "prettier -c --write \"src/**/*\"",
     "serve": "umi-serve",
     "start": "cross-env UMI_ENV=dev umi dev",
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider && cross-env UMI_ENV=dev umi dev",
     "start:dev": "cross-env REACT_APP_ENV=dev MOCK=none UMI_ENV=dev umi dev",
     "start:no-mock": "cross-env MOCK=none UMI_ENV=dev umi dev",
     "start:no-ui": "cross-env UMI_UI=none UMI_ENV=dev umi dev",
@@ -52,6 +54,7 @@
     "@umijs/route-utils": "^2.0.0",
     "antd": "^4.20.0",
     "classnames": "^2.3.0",
+    "crypto-js": "^4.2.0",
     "lodash": "^4.17.0",
     "moment": "^2.29.0",
     "omit.js": "^2.0.2",

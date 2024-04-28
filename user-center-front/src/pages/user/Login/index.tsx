@@ -69,7 +69,7 @@ const Login: React.FC = () => {
       <div className={styles.content}>
         <LoginForm
           logo={<img alt="logo" src="/logo.svg"/>}
-          title="知识星球"
+          title="云策管理中心"
           subTitle={'自律给我自由💪💪💪'}
           initialValues={{
             autoLogin: true,

@@ -438,7 +438,7 @@ SpringBoot 项目，通过 application.yml 添加不同的后缀来区分配置�
 可以在启动项目时传入环境变量：
 
 ```bash
-java -jar .\user-center-backend-0.0.1-SNAPSHOT.jar --spring.profiles.active=prod
+java -jar .\user-center-0.0.1-SNAPSHOT.jar --spring.profiles.active=prod
 ```
 
 主要是改：
@@ -498,7 +498,7 @@ java -jar .\user-center-backend-0.0.1-SNAPSHOT.jar --spring.profiles.active=prod
      netstat -ntlp 查看启动情况
    ```
 
-   注意 nginx 权限
+      注意 nginx 权限
 
 
 
@@ -730,5 +730,4 @@ location ^~ /api/ {
    ```
 
 3. 定义新的 corsFilter Bean，参考：https://www.jianshu.com/p/b02099a435bd
-
 
